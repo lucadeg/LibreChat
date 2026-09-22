@@ -1,3 +1,4 @@
+
 name: Detect Unused i18next Strings
 
 # This workflow checks for unused i18n keys in translation files.
@@ -6,14 +7,8 @@ name: Detect Unused i18next Strings
 # - com_agents_category_* keys that are stored in the database and used dynamically
 
 on:
-  pull_request:
-    paths:
-      - "client/src/**"
-      - "api/**"
-      - "packages/data-provider/src/**"
-      - "packages/client/**"
-      - "packages/data-schemas/src/**"
-
+  workflow_dispatch:
+  # Automatic triggers removed; invoke through FounderOS/Admin Gate.
 jobs:
   detect-unused-i18n-keys:
     runs-on: ubuntu-latest

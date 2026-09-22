@@ -1,11 +1,9 @@
+
 name: Frontend Unit Tests
 
 on:
-  pull_request:
-    paths:
-      - 'client/**'
-      - 'packages/data-provider/**'
-
+  workflow_dispatch:
+  # Automatic triggers removed; invoke through FounderOS/Admin Gate.
 permissions:
   contents: read
 

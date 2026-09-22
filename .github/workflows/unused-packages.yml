@@ -1,15 +1,9 @@
+
 name: Detect Unused NPM Packages
 
 on:
-  pull_request:
-    paths:
-      - 'package.json'
-      - 'package-lock.json'
-      - 'client/**'
-      - 'api/**'
-      - 'packages/client/**'
-      - 'packages/api/**'
-
+  workflow_dispatch:
+  # Automatic triggers removed; invoke through FounderOS/Admin Gate.
 jobs:
   detect-unused-packages:
     runs-on: ubuntu-latest

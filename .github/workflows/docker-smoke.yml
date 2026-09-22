@@ -1,17 +1,9 @@
+
 name: Docker Build Smoke Tests
 
 on:
   workflow_dispatch:
-  pull_request:
-    paths:
-      - '.github/workflows/docker-smoke.yml'
-      - '.dockerignore'
-      - 'Dockerfile.multi'
-      - 'package.json'
-      - 'package-lock.json'
-      - 'packages/client/**'
-      - 'packages/data-provider/**'
-
+  # Automatic triggers removed; invoke through FounderOS/Admin Gate.
 permissions:
   contents: read
 

@@ -1,15 +1,9 @@
+
 name: Docker Dev Images Build
 
 on:
   workflow_dispatch:
-  push:
-    branches:
-      - main
-    paths:
-      - 'api/**'
-      - 'client/**'
-      - 'packages/**'
-
+  # Automatic triggers removed; invoke through FounderOS/Admin Gate.
 permissions:
   contents: read
   packages: write

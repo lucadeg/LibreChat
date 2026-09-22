@@ -1,20 +1,9 @@
+
 name: Cache Integration Tests
 
 on:
-  pull_request:
-    branches:
-      - main
-      - dev
-      - dev-staging
-      - release/*
-    paths:
-      - 'packages/api/src/cache/**'
-      - 'packages/api/src/cluster/**'
-      - 'packages/api/src/mcp/**'
-      - 'packages/api/src/stream/**'
-      - 'redis-config/**'
-      - '.github/workflows/cache-integration-tests.yml'
-
+  workflow_dispatch:
+  # Automatic triggers removed; invoke through FounderOS/Admin Gate.
 permissions:
   contents: read
 

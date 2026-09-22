@@ -1,10 +1,8 @@
+
 name: Backend Unit Tests
 on:
-  pull_request:
-    paths:
-      - 'api/**'
-      - 'packages/**'
-
+  workflow_dispatch:
+  # Automatic triggers removed; invoke through FounderOS/Admin Gate.
 permissions:
   contents: read
 
